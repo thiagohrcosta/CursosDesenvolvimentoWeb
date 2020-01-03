@@ -18,3 +18,6 @@ console.log(soma(2, 3))
 
 const subtração = (a, b) => a - b
 console.log(subtração(2, 3))
+
+const imprimir2 = a => console.log(a)
+imprimir2('Teste')
