@@ -7,6 +7,7 @@ console.log(7/0)
 * Javascript
 */
 console.log("10" / 2)
+console.log('3' + 2)
 
 // Não entendendo acarretará NaN (Not a number)
 console.log("Show!" * 2)
