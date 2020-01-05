@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class Program {
 
 	public static void main(String[] args) {
+		
+		// Lendo arquivo texto com File e Scanner
 
 		File file = new File("C:\\Users\\Thiago\\Desktop\\ESTUDO GERAL\\java\\Curso Orientado a Objetos\\TrabalhandoComArquivos\\in.txt");
 		Scanner sc = null;
