@@ -10,6 +10,10 @@ div{
     background-color: #E4F9F5;
 }
 
+.sub-title{
+    color: blue;
+}
+
 .middle-container{
     background-color: red;
     width: 200px;
