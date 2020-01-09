@@ -6,21 +6,27 @@ body{
 }
 
 h1{
+    color:  #66BFBF;
     font-size: 5.625rem;
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
-
 }
 
 h2{
+    color: #66BFBF;
+    font-weight: normal;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
-
 }
 
 h3{
+    color: #11999E;
     font-family: 'Montserrat', sans-serif;
 
+}
+
+a{
+    color: #11999E;
 }
 
 .top-container{
@@ -30,7 +36,7 @@ h3{
 }
 
 .sub-title{
-    color: blue;
+    text-decoration: underline;
 }
 
 .middle-container{
