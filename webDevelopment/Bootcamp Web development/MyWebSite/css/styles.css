@@ -60,3 +60,30 @@ a{
     bottom: 300px;
 }
 
+.skill-row{
+    margin: 100px auto 100px auto;
+    width: 70%;
+    text-align: left;
+    line-height: 2;
+}
+
+.first-skill-img{
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.second-skill-img{
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin-left: 30px;
+}
+
+.third-skill-img{
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin-right: 30px;
+}
