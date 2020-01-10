@@ -13,12 +13,19 @@ body{
 }
 
 h1{
-    font-family: 'Montserrat-black', sans-serif;
+    font-family: 'Montserrat-Black', sans-serif;
     font-size: 3.5rem;
     line-height: 1.5;
     
 }
 
+h3 {
+    font-family: "Montserrat-Bold", sans-serif;
+}
+
+p{
+    color: #8f8f8f;
+}
 /* Navigation Bar */
 
 .navbar{
@@ -37,7 +44,7 @@ h1{
 
 .nav-link{
     font-size: 1.2rem;
-    font-family: "Montserrat-light", sans-serif;
+    font-family: "Montserrat-Light", sans-serif;
 }
 
 /* Download buttons */
@@ -53,3 +60,24 @@ h1{
     transform: rotate(25deg);
 }
 
+/* FEATURE SECTION */
+
+#features {
+    padding: 7% 15%;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+
+}
+
+.icon{
+    color: #EF8172;
+    margin-bottom: 1rem;
+    
+}
+
+.icon:hover{
+    color: #ff4c68
+}
