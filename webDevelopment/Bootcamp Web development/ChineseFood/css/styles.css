@@ -1,0 +1,23 @@
+/* ==================================================
+ Font Family                                        |
+                                                    |
+font-family: 'Kaushan Script', cursive;             |
+font-family: 'Ibarra Real Nova', serif;             Z
+font-family: 'IM Fell Great Primer SC', serif;      |
+font-family: 'Indie Flower', cursive;               |  
+font-family: 'Acme', sans-serif;                    Z
+font-family: 'Amatic SC', cursive;                  |
+font-family: 'Domine', serif;                       |
+font-family: 'Ubuntu', sans-serif;                  |
+================================================== */
+
+
+.logo-font{
+    font-family: 'Kaushan Script', cursive; 
+    font-size: 24px;    
+}
+
+.a-link{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 22px;
+}
