@@ -31,12 +31,16 @@ font-family: 'Ubuntu', sans-serif;                  |
 
 .first-content{
     text-align: center;
-    background-color: #ff6666;
+    /* background-color: #ff6666; */
+
+    background-image: url(../img/wallBanner.jpg);
+    background-size: cover;
+
 
 }
 
 .title-busy{
-    padding-top: 150px;
+    padding-top: 250px;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 5rem;
@@ -50,6 +54,7 @@ font-family: 'Ubuntu', sans-serif;                  |
 .app-delivery{
     text-decoration: underline;
 }
+
 
 .download-button{
         margin: 1% 1% 3% 1%;
@@ -71,6 +76,9 @@ font-family: 'Ubuntu', sans-serif;                  |
     height: 90%;
 }
 
+.itens-History4{
+    font-family: 'Kaushan Script', cursive;             |
+}
 .our-history-text-P{
     font-family: 'Kaushan Script', cursive;
     text-align: center;
@@ -88,4 +96,49 @@ font-family: 'Ubuntu', sans-serif;                  |
 }
 
 /* OUR MENU */
+
+.our-menu{
+    background-color: #393e46;
+    text-align: center;
+}
+.menu-iten1{
+    border: 5px solid #f0cf85;
+    margin: auto;
+    text-align: center;
+    margin: 5% 20%;
+    background-color:#f9f6f7;
+    height: 200px;
+    width: 300px;
+}
+
+.menu-text{
+    padding: 10px;
+    font-family: 'Kaushan Script', cursive;
+    color: #393e46;
+}
+
+hr{
+    border-top: 1px solid  #393e46;
+}
+
+.price-menu{
+    color: #393e46;
+}
+
+/* ==================  Special Offer =================== */
+
+.special-offer{
+    
+}
+
+.special-offer-Text{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+}
+
+.btn-large1{
+    
+    font-size: 2rem;
+}
 
