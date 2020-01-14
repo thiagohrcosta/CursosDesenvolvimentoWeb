@@ -11,6 +11,10 @@ font-family: 'Domine', serif;                       |
 font-family: 'Ubuntu', sans-serif;                  |
 ================================================== */
 
+.bg-color{
+    background-color: #db3056;
+}
+
 
 .container-fluid{
  
@@ -60,6 +64,10 @@ font-family: 'Ubuntu', sans-serif;                  |
         margin: 1% 1% 3% 1%;
 }
 
+/* .btn-color-download{
+    background-color: #db3056;
+} */
+
 /* OUR HISTORY */
 
 .history1-margin col-lg-6{
@@ -97,9 +105,26 @@ font-family: 'Ubuntu', sans-serif;                  |
 
 /* OUR MENU */
 
+.order-font{
+    font-family: 'Kaushan Script', cursive;
+    color: #f9f6f7;
+}
+
+.order-font-sub{
+    font-family: 'Acme', sans-serif;                    
+    color: #f9f6f7;
+    font-size: 1.5rem;
+}
+
+.price-type-text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3rem;
+
+}
 .our-menu{
-    background-color: #393e46;
+    background-color: #db3056;
     text-align: center;
+    padding: 100px;
 }
 .menu-iten1{
     border: 5px solid #f0cf85;
@@ -125,6 +150,29 @@ hr{
     color: #393e46;
 }
 
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+.btn-price1{
+    background-color: #f9f6f7;
+}
+
+.btn-price1:hover{
+    background-color: #db3056;
+}
+
+.btn-price2{
+    background-color: #db3056;
+}
+
+.btn-price2:hover{
+    background-color: #851d41;
+}
+
+
+
 /* ==================  Special Offer =================== */
 
 .special-offer{
@@ -141,4 +189,8 @@ hr{
     
     font-size: 2rem;
 }
+
+
+/* ===== PRICING ===== */
+
 
