@@ -1,4 +1,4 @@
-/* Media */
+/* Media ====================================== */
 
 @media(max-width: 1028px){
 
@@ -12,43 +12,43 @@
     }
 }
 
-/* Site CSS */ 
+/* Site CSS ====================================== */
 
 body{
     font-family: "Montserrat";
+    text-align: center;
 }
 
-#title{
-    background-color: #ff4c68;
-    color: #ffffff;
-}
-
-.container-fluid{
-    padding: 3% 15% 7%;
-
-}
-
-h1{
-    font-family: 'Montserrat-Black', sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    
-}
-
-h2{
+h1, h2, h3, h4, h5, h6{
     font-family: 'Monstserrat-Bold', sans-serif;
-    font-size: 3rem;
-    line-height: 1.5;
-
-}
-h3 {
-    font-family: "Montserrat-Bold", sans-serif;
+  
 }
 
 p{
     color: #8f8f8f;
 }
-/* Navigation Bar */
+
+/* HEADINGS ====================================== */
+
+.big-heading {
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Title Section ====================================== */
+
+.container-fluid{
+    padding: 7% 15%
+
+}
+
+/* Navigation Bar ====================================== */
 
 .navbar{
     padding: 0 0 4.5rem;
@@ -69,13 +69,24 @@ p{
     font-family: "Montserrat-Light", sans-serif;
 }
 
-/* Download buttons */
+/* Download buttons ====================================== */
 
 .download-button{
     margin: 5% 3% 5% 0;
 }
 
 /* Title image */
+
+#title{
+    background-color: #ff4c68;
+    color: #ffffff;
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 2% 15% 7%;
+}
+
 
 .title-image{
     width: 60%;
@@ -84,17 +95,15 @@ p{
     right: 30%;
 }
 
-/* FEATURE SECTION */
+/* FEATURE SECTION ====================================== */
 
 #features {
-    padding: 7% 15%;
     background-color: #fff;
     position: relative;
     z-index: 1;
 }
 
 .feature-box{
-    text-align: center;
     padding: 5%;
 
 }
@@ -109,8 +118,11 @@ p{
     color: #ff4c68
 }
 
+.feature-title{
+    font-size: 1.5rem;
+}
 
-/* Testimonial */
+/* Testimonial ====================================== */
 
 #testimonials{
     text-align: center;
@@ -118,20 +130,23 @@ p{
     color: #ffffff;
 }
 
+
 .testimonial-img{
     width: 10%;
     border-radius: 100%;
     margin: 20px;
 }
 
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
 
 .carousel-item{
-    padding: 7% 15%;
 }
 
 #press{
     background-color: #EF8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -140,11 +155,16 @@ p{
     margin: 20px 20px 50px;
 }
 
-/* PRICING SECTION */
+/* PRICING SECTION ====================================== */
 
 #pricing{
     padding: 100px;
-    text-align: center;
+}
+
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
+
 }
 
 .pricing-column{
@@ -152,12 +172,10 @@ p{
 }
 
 
-/* CTA SECTION  */
+/* CTA SECTION ====================================== */
 
 #cta{
-    padding: 7% 15%;
     background-color: #ff4c68;
-    text-align: center;
 }
 
 .h3-cta{
@@ -169,11 +187,9 @@ p{
 
 }
 
-/* FOOTER */
+/* FOOTER ====================================== */
 
 #footer{
-    padding: 2% 15% 2%;
-    text-align: center;
 }
 
 .social-icon{
