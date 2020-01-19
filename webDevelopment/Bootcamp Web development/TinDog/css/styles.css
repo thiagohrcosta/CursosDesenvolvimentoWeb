@@ -1,16 +1,3 @@
-/* Media ====================================== */
-
-@media(max-width: 1028px){
-
-    #title{
-        text-align: center;
-    }
-
-    .title-image{
-        position: static;
-        transform: rotate(0);
-    }
-}
 
 /* Site CSS ====================================== */
 
@@ -48,6 +35,18 @@ p{
 
 }
 
+/* SECTONS COLOR ======================================= */
+
+.colored-section{
+    background-color: #ff4c68;
+
+}
+
+.white-section{
+    background-color: #fff;
+
+}
+
 /* Navigation Bar ====================================== */
 
 .navbar{
@@ -78,7 +77,6 @@ p{
 /* Title image */
 
 #title{
-    background-color: #ff4c68;
     color: #ffffff;
     text-align: left;
 }
@@ -125,7 +123,6 @@ p{
 /* Testimonial ====================================== */
 
 #testimonials{
-    text-align: center;
     background-color: #EF8172;
     color: #ffffff;
 }
@@ -142,8 +139,6 @@ p{
     line-height: 1.5;
 }
 
-.carousel-item{
-}
 
 #press{
     background-color: #EF8172;
@@ -174,10 +169,6 @@ p{
 
 /* CTA SECTION ====================================== */
 
-#cta{
-    background-color: #ff4c68;
-}
-
 .h3-cta{
     font-family: "Montserrat-Black", sans-serif;
     color: #fff;;
@@ -189,10 +180,21 @@ p{
 
 /* FOOTER ====================================== */
 
-#footer{
-}
-
 .social-icon{
     margin: 20px 10px;
 
+}
+
+/* Media ====================================== */
+
+@media(max-width: 1028px){
+
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
 }
