@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/d45b7ae9b8.js" crossorigin="anonymous"></script>
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/styles.css">
+
+     
+    <title>MOVIE NIGHT</title>
+</head>
+<body>
+
+
+    <section class="corFundo">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">MOVIE NIGHT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Launch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Series</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="big-heading"><strong>007 IS BACK!!!</strong></h1>
+                <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Mais informações</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="row">
+                <div class="ytTrailer" class="col-lg-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FlriFMTIPOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modalTrailerInfo" class="col-lg-6">
+                    <h1>No Time To Die</h1>
+                    <p>James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, 
+                        turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.</p>
+                    <p><strong>Director:</strong> Cary Joji Fukunaga</p>
+                </div>
+            </div>
+            <h1>CASTING</h1>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="miniImg" src="img/bondMini1.jpg">
+                </div>
+                <div class="col-lg-3">
+                    <img class="miniImg" src="img/bondMini3.jpg">
+                </div>
+                <div class="col-lg-3">
+                    <img class="miniImg" src="img/bondMini2.jpg">
+                </div>
+                <div class="col-lg-3">
+                    <img class="miniImg" src="img/bondMini2.jpg">
+                </div>
+                
+            </div>
+        </div>
+                    
+            </div>
+
+    </section>
+    
+    <section>
+    <h1>Launch</h1>
+    </section>
+
+    <!-- SIGN UP AND PAY TO WATCH TRAILER -->
+
+   
+    </section>
+
+    <section>
+        <h1>TESTE</h1>
+    </section>
+
+
+
+
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+
+</body>
+</html>

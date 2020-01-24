@@ -24,6 +24,6 @@ alert ("My name is" + myName + ", welcome to my course" + yourName + "");
 var gameLevel = 1;
 gameLevel = 2;
 gameLevel = 3;
-alert(gameLevel)
+alert(gameLevel);
 
 
