@@ -20,9 +20,12 @@ loveCalculator = Math.floor(loveCalculator) + 1;
 
 alert("The LOVE SCORE of " + firstName + " and " + loverName + " is " + loveCalculator + " %.");
 
-if (loveCalculator < 60){
-    alert("You have no chance!")
+if (loveCalculator > 30 && loveCalculator <= 60){
+    alert("Try harder maybe she/he notice You!")
+}
+if (loveCalculator <= 30) {
+    alert("Just forget it, you have no chance!")
 }
 else{
-    alert("Go for it!!!")
+    alert("Go for it!!! This is true love.")
 }
