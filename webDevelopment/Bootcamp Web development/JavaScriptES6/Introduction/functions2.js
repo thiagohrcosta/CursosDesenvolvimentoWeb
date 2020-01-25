@@ -42,10 +42,8 @@ function getMilk(bottles) {
     console.log("moveRight");
     console.log("moveRight");
 
-    var numberOfBottles = Math.floor(money / 1.5);
-
-    console.log("buy " + numberOfBottles + " bottles of milk");
-
+    console.log("buy " + calcBottles(money, 1.5) + " bottles of milk");
+    
     console.log("moveLeft");
     console.log("moveLeft");
     console.log("moveDown");
@@ -55,8 +53,34 @@ function getMilk(bottles) {
     console.log("moveLeft");
     console.log("moveLeft");
     console.log("enterHouse");
+
+    // return money % 1.5;  // remainder of this division
+
+    return calcChange(money, 1.5);
+
   }
 
+function calcBottles( startingMoney, costPerBottle){
+    var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+    return numberOfBottles;
+}
 
-  getMilk(5); // $ 1.5 each
+function calcChange(startingAmount, costPerBottle){
+    var change = startingAmount % costPerBottle;
+    return change;
+}
+
+console.log("Hello master, your change is $ " + getMilk(5));
+
+
+/* 
+
+function getMilk(money){
+    return money % 1.5;
+}
+
+*/
+
+
+
 
