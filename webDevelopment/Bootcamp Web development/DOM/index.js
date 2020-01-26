@@ -22,4 +22,16 @@ document.querySelector("button").classList.remove("invisible");
 // Toggle class
 document.querySelector("button").classList.toggle("invisible");
 
+// Adding a class 
 document.querySelector("h1").classList.add("huge");
+
+// Adding innerHTML
+document.getElementById("title").innerHTML = "<em>Hello There</em>";
+
+// Manipulate attributes
+document.querySelector("a").attributes;
+
+document.querySelector("a").getAttribute("href");
+
+document.querySelector("a").setAttribute("href", "https://www.bing.com")
+
