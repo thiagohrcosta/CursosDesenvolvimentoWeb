@@ -29,3 +29,18 @@ var randomImage2Source = "images/" + randomDice2Img;
 // get the second dice
 var img2 = document.querySelectorAll("img")[1];
 img2.setAttribute("src", randomImage2Source);
+
+// ============ IF CONDITIONALS ============== //
+
+// If player 1 wins
+if (randomNumber1 > randomNumber2){
+    document.querySelector("h1").innerHTML = "Player 1 WINS!!!";
+}
+// If player 2 wins
+else if (randomNumber2 > randomNumber1){
+    document.querySelector("h1").innerHTML = "Player 2 WINS!!!";
+}
+// Draw
+else{
+    document.querySelector("h1").innerHTML = "DRAW!!!"
+}
