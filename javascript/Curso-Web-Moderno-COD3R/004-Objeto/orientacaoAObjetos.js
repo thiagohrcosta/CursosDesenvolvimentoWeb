@@ -49,4 +49,10 @@ objeto.processamento()
 *  formam o carro, ou seja, objetos simples que no todo formam o todo.
 *  A herança significa que você recebe atributos e comportamentos de um
 *  objeto pai. 
+*
+*  4. POLIMORFISMO
+*  Significa múltiplas fórmulas. Consegue-se, por exemplo, usar o conceito
+*  genérico de carro que uma hora aponta para uma Ferrari, e em outro momento
+*  é substituído por uma Lamborghini, onde uma variável mais genérica
+*  pode trabalhar com vários tipos específicos.
 */
