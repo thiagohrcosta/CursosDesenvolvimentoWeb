@@ -8,5 +8,18 @@
 
 processamento(valor1, valor2, valor3)
 
+// Conceito Orientado à objetos
+// Há mudança de foco, aqui há dados que em seu interior há funções.
 
+objeto = {
+    valor1,
+    valor2,
+    valor3,
+    processamento(){
+    // ....
+    }
 }
+
+// Invoca-se o processamento a partir do dado. Há foco no objeto.
+objeto.processamento()
+
