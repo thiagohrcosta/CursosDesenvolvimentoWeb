@@ -35,4 +35,18 @@ objeto.processamento()
 *  O mesmo objeto pode ser abstraído de forma diferente, o carro para o DETRAN
 *  pode ter necessidades diferentes de uma oficina mecânica
 *
+*  2. ENCAPSULAMENTO:
+*  É ter os detalhes de implementação ocultados e mostrar a quem precisa usar
+*  o sistema, uma interface simples que usará apenas o que ela precisa saber
+*  para usar o sistema. Informações importantes são escondidas dando apenas
+*  a interface de comunicação ao usuário.
+*  
+*  3. HERANÇA (PROTOTYPE)
+*  É um princípio baseado no "É 1", ou seja, há formas de reutilizar código
+*  o motor, por exemplo, é objeto e o carro "é 1", não há necessidade de se 
+*  colocar a complexidade do motor dentro do carro, basta dizer que o motor
+*  pertence ao carro. O motor somado a outros objetos como porta, rodas, 
+*  formam o carro, ou seja, objetos simples que no todo formam o todo.
+*  A herança significa que você recebe atributos e comportamentos de um
+*  objeto pai. 
 */
