@@ -25,5 +25,16 @@ aprovados[9] = 'João'
 console.log(aprovados)
 console.log(aprovados[8] === undefined)
 
+aprovados.sort() // causa alteração dentro do Array
+console.log(aprovados)
 
+delete aprovados[1] // vai excluir o elemento, mas ele não alterará o array
+console.log(aprovados[1])
+console.log(aprovados[2])
+console.log(aprovados)
 
+aprovados = ['Bia', 'Carlos', 'Ana', 'Barbara']
+aprovados.splice(1, 2, 'Elemento1', 'Elemento2')
+console.log(aprovados)
+aprovados.splice(1,2, 'Carlos', 'Ana')
+console.log(aprovados)
