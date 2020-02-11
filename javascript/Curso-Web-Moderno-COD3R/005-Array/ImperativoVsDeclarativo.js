@@ -16,3 +16,10 @@ const soma = (total, atual) => total + atual
 const total2 = alunos.map(getNota).reduce(soma)
 console.log(total2 / alunos.length)
 
+// SQL =  Select codigo, nome, email from clientes where ativo = 1
+// Exemplo de código declarativo. A forma como o banco de dados vai obter
+// o resultado não importa, o que se importa é o que "se quer" e não 
+// "como fazer" para obter os dados.
+
+
+
