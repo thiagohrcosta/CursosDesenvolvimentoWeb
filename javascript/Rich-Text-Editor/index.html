@@ -13,7 +13,7 @@
         <button onclick="execCmd('bold');"><i class="fa fa-bold"></i></button>
         <button onclick="execCmd('italic');"><i class="fa fa-italic"></i></button>
         <button onclick="execCmd('underline');"><i class="fa fa-underline"></i></button>
-        <button onclick="execCmd('strikeThohrough');"><i class="fa fa-strikethrough"></i></button>
+        <button onclick="execCmd('strikeThrough');"><i class="fa fa-strikethrough"></i></button>
         <button onclick="execCmd('justifyLeft');"><i class="fa fa-align-left"></i></button>
         <button onclick="execCmd('justifyCenter');"><i class="fa fa-align-center"></i></button>
         <button onclick="execCmd('justifyRight');"><i class="fa fa-align-right"></i></button>
@@ -61,8 +61,8 @@
             <option value="6">6</option>
             <option value="7">7</option>
         </select>
-        Fore Color: <input type="color" onchange="execCommandWithArg('foreColor', this.value);"/>
-        Background: <input type="color" onchange="execCommandWithArg('hiliteColor', this.value);"/>
+        Fore Color: <input type="color" onchange="execCommandWithArg('foreColor', this.value);">
+        Background: <input type="color" onchange="execCommandWithArg('hiliteColor', this.value);">
         <button onclick="execCommandWithArg('insertImage', prompt('Enter the image URL', ''));"><i class="fa fa-file-image-o"></i></button>
         <button onclick="execCmd('selectAll');">Select All</button>
 
