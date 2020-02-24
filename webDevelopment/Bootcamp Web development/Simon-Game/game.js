@@ -2,13 +2,11 @@
 const buttonColours = ["red", "blue", "green", "yellow"];
 
 var gamePattern = [];
-
 var userClickPattern = [];
 
 // Starting the game
-var started = false
-
-var level = 0
+var started = false;
+var level = 0;
 
 $(document).keypress(function () {
     if (!started){
@@ -18,58 +16,47 @@ $(document).keypress(function () {
     }
 });
 
-
 $('.btn').click(function(){
-    var userChosenColour = $(this).atrr("id");
 
+    var userChosenColour = $(this).attr("id");
     userClickPattern.push(userChosenColour);
 
     playSound(userChosenColour);
-
     animatedPress(userChosenColour);
 
-    checkAnswer(userClickPattern.length - 1);
+    checkAnswer(userClickedPattern.length - 1);
 
 })
 
 function checkAnswer(currentLevel){
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]){
-        console.log("success");
         if (userClickedPattern.length === gamePattern.length){
-            setTimeout(() =>{
+            setTimeout(function (){
                 nextSequence();
             }, 1000);
         }
     }
     else {
-        console.log("WRONG!");
-
         playSound("wrong");
-
         $("body").addClass("game-over");
-            setTimeout(() => {
-                $("body").removeClass("game-over");
-            }, 200);
-
         $("#level-title").text("Game Over, Press Any Key to Restart");
 
-        startOver();
+        setTimeout(function(){
+            $("body").removeClass("game-over");
+        }, 200);
 
+        startOver();
     }
 }
 
 function nextSequence(){
-
-    userClickedPattern = []
-
-    level++
+    userClickedPattern = [];
+    level++;
 
     $("#level-title").text("Level" + level);
 
     var randomNumber = Math.floor(Math.random() *4);
-
     var randomChosenColour = buttonColours[randomNumber]
-
     gamePattern.push(randomChosenColour)
 
     $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
@@ -78,19 +65,18 @@ function nextSequence(){
    playSound(randomChosenColour)
 }
 
-function playSound(name){
-    var audio = new Audio("sounds/" + randomChosenColour + ".mp3")
-    audio.play();        
-}
-
 function animatedPress(currentColor){
     $("#" + currentColor),addClass("pressed");
 
     // Just testing some arrow function style
-    setTimeout( () => {
+    setTimeout(function () {
         $("#" + currentColor).removeClass("pressed");
     }, 100);
+}
 
+function playSound(name){
+    var audio = new Audio("sounds/" + name + ".mp3")
+    audio.play();        
 }
 
 // Restart the game
