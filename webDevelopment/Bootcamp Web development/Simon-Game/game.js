@@ -9,7 +9,7 @@ $('.btn').click(function(){
     var userChosenColour = $(this).atrr("id");
 
     userClickPattern.push(userChosenColour);
-    
+
     playSound(userChosenColour);
 
 })
@@ -32,3 +32,12 @@ function playSound(name){
     audio.play();        
 }
 
+function animatedPress(currentColor){
+    $("#" + currentColor),addClass("pressed");
+
+    // Just testing some arrow function style
+    setTimeout( () => {
+        $("#" + currentColor).removeClass("pressed");
+    }, 100);
+
+}
