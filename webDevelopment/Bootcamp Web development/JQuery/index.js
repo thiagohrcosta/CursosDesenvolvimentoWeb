@@ -50,3 +50,20 @@ $("input").keypress(function(event){
 $("h1").on("mouseover", function(){
     $("h1").css("color", "yellow")
 })
+
+/*
+
+$("button").on("click", function(){
+    $("h1").hide();
+    $("h1").fadein();
+    $("h1").fadeout();
+    $("h1").show();
+    $("h1").slideup();
+    $("h1").slidedown();
+
+    $("h1").animate({ opacity: 0.5 })    // ONLY VALUES, CAN´T USE WORDS
+                                         // COLOR: RED, THIS WON´T WORK
+
+})
+
+*/
