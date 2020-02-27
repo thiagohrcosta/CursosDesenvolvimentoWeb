@@ -1,12 +1,27 @@
 <h1>Links</h1>
 
 <!-- URL ABSOLUTA -->
-<a href="http://www.google.com.br">GOOGLE 1</a><br>
+<a id="inicio" href="http://www.google.com.br">GOOGLE 1</a><br>
 <a href="http://www.google.com.br" target="_blank">Google 2</a><br><br>
 <hr>
 
 <!-- URL RELATIVA -->
 
-<a href="index.html">Voltar 1</a><br>
-<a href="/index.html">Voltar 2</a><br>
-<a href="../index.html">VOltar 3</a><br>
+<a href="index.html">Voltar 1</a><br> <!-- Erro -->
+<a href="/index.html">Voltar 2</a><br> <!-- Acessa a pasta raiz -->
+<a href="../index.html">Voltar 3</a><br> <!-- Sai da pasta atual, e vai para index.html -->
+<br>
+<hr>
+<!-- Link de e-mail -->
+<br>
+<a href="mailto:email@empresa.com.br">Entre em contato</a><br>
+<hr>
+<!-- Links de navegação na própria página -->
+<br>
+<div id="noticia" style="position:absolute;top:2000px">
+    <h1>NOTÍCIA IMPORTANTE</h1>
+    <p>Não era nada importante afirmou uma de nossas fontes.</p>
+    <a href="#inicio">Voltar para o início</a>
+</div>
+
+<a href="#noticia">Ir para Notícia</a>
