@@ -12,6 +12,11 @@ app.get("/contact", function(req, res){
 app.get("/about", function(req, res){
     res.send("<h1>Thiago Costa</h1><br><em>Web and System Developer</em>")
 })
+
+app.get("/hobbies", function(req, res){
+    res.send("<ul><li>Coffe</li><li>Code</li><li>Games</li></ul>")
+})
+
 app.listen(3000, function(){
     console.log("Server started on port 3000");
 });

@@ -1,0 +1,14 @@
+{
+  "name": "calculator-project",
+  "version": "1.0.0",
+  "description": "Simple calculator project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago Costa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
