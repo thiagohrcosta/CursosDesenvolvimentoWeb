@@ -34,27 +34,28 @@ app.post("/bmiCalculator", function(req, res){
 
     var resultBMI = weightBMI / (heightBMI * heightBMI);
 
+    /*
     res.send("Your BMI is " + resultBMI.toFixed(2));
-/*
+    */
     if(resultBMI < 18.5){
-        console.log("Low weight.");
+        res.send("Your BMI is " + resultBMI.toFixed(2) + " what´s meaning <strong>low weight</strong>.");
     }
     else if (resultBMI >= 18.5 && resultBMI <= 24.9){
-        console.log("Normal weight, congratulation.");
+        res.send("Your BMI is " + resultBMI.toFixed(2) + " what´s meaning <strong>normal weight</strong>, congratulation.");
     }
     else if (resultBMI >= 25 && resultBMI <= 29.9){
-        console.log("overweight.");
+        res.send("Your BMI is " + resultBMI.toFixed(2) + " what´s meaning <strong>overweight</strong>.");
     }
     else if (resultBMI >= 30 && resultBMI <= 34.9){
-        console.log("Overweight Level 1 - ALERT!");
+        res.send("Your BMI is " + resultBMI.toFixed(2) + " what´s meaning <strong>overweight</strong> Level 1 - ALERT!");
     }
     else if (resultBMI <= 35 && resultBMI <= 39.9){
-        console.log("Overweight Leve 2 - ALERT ALERT!!");
+        res.send("Your BMI is " + resultBMI.toFixed(2) + " what´s meaning <strong>overweight</strong> Level 2 - ALERT ALERT!!");
     }
     else{
-        console.log("Overweight Level 3 - ALERT ALERT ALERT!!!")
+        res.send("Your BMI is " + resultBMI.toFixed(2) + " what´s meaning <strong>overweight</strong> Level 3 ALERT ALERT ALERT!!!")
     }
-*/
+
 
 })
 
