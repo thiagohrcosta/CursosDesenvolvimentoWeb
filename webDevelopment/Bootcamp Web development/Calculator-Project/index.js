@@ -20,7 +20,6 @@ app.post("/", function(req, res){
     res.send("The result of calculation is " + result);
 });
 
-
 // BMI Calculator method ======================
 
 app.get("/bmicalculator", function(req, res){
@@ -37,6 +36,7 @@ app.post("/bmiCalculator", function(req, res){
     /*
     res.send("Your BMI is " + resultBMI.toFixed(2));
     */
+
     if(resultBMI < 18.5){
         res.send("Your BMI is " + resultBMI.toFixed(2) + " what´s meaning <strong>low weight</strong>.");
     }
@@ -55,7 +55,6 @@ app.post("/bmiCalculator", function(req, res){
     else{
         res.send("Your BMI is " + resultBMI.toFixed(2) + " what´s meaning <strong>overweight</strong> Level 3 ALERT ALERT ALERT!!!")
     }
-
 
 })
 
