@@ -34,7 +34,7 @@ app.post("/bmiCalculator", function(req, res){
 
     var resultBMI = weightBMI / (heightBMI * heightBMI);
 
-    res.send("Your BMI is" + resultBMI);
+    res.send("Your BMI is " + resultBMI.toFixed(2));
 /*
     if(resultBMI < 18.5){
         console.log("Low weight.");
