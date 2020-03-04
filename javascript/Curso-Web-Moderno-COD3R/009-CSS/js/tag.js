@@ -17,11 +17,13 @@ const colors = {
 }
 
 document.querySelectorAll('.tag').forEach(elemento =>{
-    const tagName = elemento.tagName.toLocaleLowerCase()
-    box.style.bordercolor = '#616161'
-    if (!box.classList.contains('nolabel')){
+    const tagName = elemento.tagName.toLowerCase()
+
+    elemento.style.bordercolor = colors.get(tagName)
+
+    if (!elemento.classList.contains('nolabel')){
         const label = document.createElement('label')
-        label.style.backgroundColor = '#616161'
+        label.style.backgroundColor = colors.get(tagName)
         label.innerHTML = tagName
         elemento.insertBefore(label, box.childNodes[0])
         
