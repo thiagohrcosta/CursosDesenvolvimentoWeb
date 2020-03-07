@@ -6,7 +6,15 @@ const app = express();
 
 app.get("/", function(req, res){
 
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=Contagem,br&appid=e908c91227bde0523b0a8a97474705cc&units=metric"
+    // Adding custom URL to let user choose the city ===================================================================
+
+    const query = "London";
+    const apiKey = "e908c91227bde0523b0a8a97474705cc";
+    const unit = metric;
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit;
+    
+    // Ending of custom URL ============================================================================================
+
     https.get(url, function(response){
         console.log(response.statusCode);
         response.on("data", function(data){
