@@ -11,11 +11,10 @@ app.get("/", function(req, res){
         console.log(response.statusCode);
         response.on("data", function(data){
             const weatherData = JSON.parse(data);
-            const object = {
-                name: "Thiago",
-                favouriteFood: "Filet a parmegiana"
-            }
-            console.log(JSON.stringify(object));
+            const temp = weatherData.main.temp;
+            const weatherDescription = weatherData.weather[0].description;
+            console.log(temp, weatherDescription);
+
         })
     })
     
