@@ -1,11 +1,19 @@
 const express = require("express");
+const https = require("https");
 
 const app = express();
 
 
 app.get("/", function(req, res){
+
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=Contagem,br&appid=e908c91227bde0523b0a8a97474705cc"
+    https.get(url, function(response){
+        console.log(response);
+    })
+
     res.send("Server is up and running.")
 })
+
 
 
 
