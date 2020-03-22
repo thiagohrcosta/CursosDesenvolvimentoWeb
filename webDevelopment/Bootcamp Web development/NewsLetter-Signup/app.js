@@ -17,17 +17,35 @@ app.get("/", function(req, res){
 
 app.post("/", function(req, res){
 
-    var firstName = req.body.fName;
-    var lastName = req.body.lName;
-    var email = req.body.email;
+    const firstName = req.body.fName;
+    const lastName = req.body.lName;
+    const email = req.body.email;
 
-    console.log(firstName, lastName, email);
+    const data = {
+        members: [
+            {
+                email_address: email,
+                status: "subscribed",
+                merge_fields: {
+                    FNAME: firstName,
+                    LNAME: lastName
+                }
+            }
+        ]
+    };
+
+    const jsonData = JSON.stringify(data);
+
+    https.request(url[,options][,callback]);
+
+    
+
 })
 
 
 
 app.listen(3000, function(){
-    console.log("Server is running on port 5000.");
+    console.log("Server is running on port 3000.");
 })
 
 
