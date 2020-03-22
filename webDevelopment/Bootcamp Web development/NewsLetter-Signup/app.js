@@ -25,6 +25,14 @@ app.post("/", function(req, res){
 })
 
 
+
 app.listen(3000, function(){
     console.log("Server is running on port 5000.");
 })
+
+
+// API KEY
+// 6706fda1f12bada8705a9804647dfc78-us19
+
+// LIST ID
+// b145eba022
