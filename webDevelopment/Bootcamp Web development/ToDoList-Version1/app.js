@@ -8,10 +8,14 @@ app.get("/", function(req, res){
   var currentDay = today.getDay();
 
   if (currentDay === 6 || currentDay === 0){
-    res.send("Yeah it´s the weekend!");
+    res.write(
+      "<h1>Yeah it´s the weekend!</h1>"
+      );
   }  
   else{
-    res.send("Today I have to work!")
+    res.write("<h1>It´s not weekend!</h1>")
+    res.write("Today I have to work!")
+    res.send();
   }
 })
 
