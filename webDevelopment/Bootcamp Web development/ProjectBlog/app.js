@@ -57,6 +57,9 @@ app.get("/posts/:postName", function(req, res){
     if(storedTitle === requestedTitle){
       console.log("Match Found!!!")
     }
+    else{
+      console.log("Not found")
+    }
 
   });
 });
