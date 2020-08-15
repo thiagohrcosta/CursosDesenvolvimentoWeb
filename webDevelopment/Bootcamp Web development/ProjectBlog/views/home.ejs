@@ -6,8 +6,48 @@
   <%= startingContent %>
 </p>
 
-<% for(var i = 0; i < posts.length; i++){ %>
-  <% console.log(posts[i].title); %>
-<% } %>
+<% posts.forEach(function(post){ %>
+  <div class="titleStyle">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-12 col-md-8">
+          <h1 class=""><%= post.title %></h1> 
+        </div>
+
+        
+        <div class="col-xs-6 col-md-2">
+          
+          <p class="editButton">Edit</p>
+        </div>
+        <div class="col-xs-6 col-md-2">
+          
+          <p class="deleteButton">Delete</p>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  
+  <div class="">
+    
+    <div class="container">
+      <div class="profilePosition">
+        <img class="profilePicture" src="<%= post.profileURL %>"/>       
+        <p>Postado por: <%= post.name %> </p>
+      </div>
+      
+      <hr class="divisionalLine">
+    
+    </div>
+
+  </div>
+  
+  <p><%= post.content %></p>
+  <% console.log(post); %>
+<% }) %>
+
 
 <%- include('./partials/footer'); -%>

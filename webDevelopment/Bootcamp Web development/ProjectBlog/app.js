@@ -39,12 +39,17 @@ app.get('/compose', function(req, res){
 app.post('/compose', function(req, res){
   const post = {
     title: req.body.postTitle,
+    name: req.body.publisherName,
     profileURL: req.body.pictureUrl,
     content: req.body.postBody
   }
   posts.push(post);
 
   res.redirect("/");
+});
+
+app.get("/posts/:postName", function(req, res){
+  console.log(req.params.postName);
 })
 
 

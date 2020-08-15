@@ -15,12 +15,66 @@
     color: #1abc9c !important;
 }
 
+.editButton{
+    background-color: #1abc9c;
+    color: white;
+    width: 110px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer; 
+}
+
+.editButton:hover{
+    background-color: #197163;
+}
+
+.deleteButton{
+    background-color: #d54062;
+    color: white;
+    width: 110px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.deleteButton:hover{
+    background-color: #810000;
+}
+
+.profilePosition{
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+
+}
+
+.profilePicture{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+.titleStyle{
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+.divisionalLine{
+
+    width: 400px;
+}
+
 .footer-padding {
 	padding-bottom: 60px;
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	bottom: 0;
 	width: 100%;

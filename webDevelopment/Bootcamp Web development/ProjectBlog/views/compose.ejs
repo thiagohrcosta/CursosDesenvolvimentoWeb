@@ -1,6 +1,6 @@
 <%- include('./partials/header'); -%>
 
-<h1>Compose</h1>
+<h1>Add content</h1>
 
 <form action="/compose" method="post">
   
@@ -8,8 +8,13 @@
     
       <label for="">Title</label>
       <input class="form-control" type="text" name="postTitle">
+
+      <label for="">Publish by</label>
+      <input class="form-control" type="text" name="publisherName">
+
       <label for="">Profile Picture URL</label>
       <input class="form-control" type="text" name="pictureUrl">
+
       <label for="">Post</label>
       <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
       
