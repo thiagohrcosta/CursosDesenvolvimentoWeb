@@ -26,6 +26,12 @@ const articleSchema = {
 //Creating collection on Mongoose
 const Article = mongoose.model("Article", articleSchema);
 
+app.get("/articles", function(req, res){
+  Article.find(function(err, foundArticles){
+    console.log(foundArticles);
+  });
+});
+
 app.listen(3000, function(){
   console.log("server started on port 3000");
 })
