@@ -7,65 +7,86 @@ const app = express();
 
 app.set("view engine", "ejs");
 
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-app:123456app@movieapi.z0kfu.mongodb.net/wikiApi", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true});
+mongoose.connect(
+  "mongodb+srv://admin-app:123456app@movieapi.z0kfu.mongodb.net/wikiApi",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 // Creating Schema
 const articleSchema = {
   title: String,
-  content: String
-}
+  content: String,
+};
 
 //Creating collection on Mongoose
 const Article = mongoose.model("Article", articleSchema);
 
-app.get("/articles", function(req, res){
-  Article.find(function(err, foundArticles){
-    if(!err){
-      res.send(foundArticles);
-    }
-    else{
-      res.send(err);
-    }
+///////////////////// REQUEST TARGETING ALL ARTICLES /////
+app.route("/articles")
+
+  .get(function (req, res) {
+    Article.find(function (err, foundArticles) {
+      if (!err) {
+        res.send(foundArticles);
+      } else {
+        res.send(err);
+      }
+    });
+  })
+
+  .post(function (req, res) {
+    const newArticle = new Article({
+      title: req.body.title,
+      content: req.body.content,
+    });
+
+    newArticle.save(function (err) {
+      if (!err) {
+        res.send("Successfully added a new article.");
+      } else {
+        res.send(err);
+      }
+    });
+  })
+
+  .delete(function (req, res) {
+    Article.deleteMany(function (err) {
+      if (!err) {
+        res.send("Successfully delete all articles.");
+      } else {
+        res.send(err);
+      }
+    });
   });
-});
 
-app.post("/articles", function(req, res){
 
-  const newArticle = new Article({
-    title: req.body.title,
-    content: req.body.content
+  ////////////////// REQUEST TARGETTING A SPECIFIC ARTICLE /////
+
+  app.route("/articles/:articleTitle")
+  
+  .get(function(req, res){
+
+    Article.findOne({title: req.params.articleTitle}, function(err, foundArticle){
+      if(foundArticle){
+        res.send(foundArticle);
+      }
+      else{
+        res.send("No articles matching that title was found.");
+      };
+    });
   });
 
-  newArticle.save(function(err){
-    if(!err){
-      res.setDefaultEncoding("Successfully added a new article.")
-    }
-    else{
-      res.send(err);
-    }
-  });
-});
-
-app.delete("/articles", function(req, res){
-
-  Article.deleteMany(function(err){
-    if(!err){
-      res.send("Successfully delete all articles.");
-    }
-    else{
-      res.send(err);
-    }
-  });
-});
-
-app.listen(3000, function(){
+app.listen(3000, function () {
   console.log("server started on port 3000");
-})
+});
