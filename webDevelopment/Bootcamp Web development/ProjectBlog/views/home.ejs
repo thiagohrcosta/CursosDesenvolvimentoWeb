@@ -45,7 +45,11 @@
 
   </div>
   
-  <p><%= post.content %></p>
+  <p>
+    <%= post.content.substring(0,200) + "..." %>
+    <a href="/posts/<%= post.title %>">Read More</a>
+  </p>
+
   <% console.log(post); %>
 <% }) %>
 
